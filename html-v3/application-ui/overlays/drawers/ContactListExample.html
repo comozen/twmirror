@@ -1,0 +1,125 @@
+<div aria-labelledby="slide-over-title" aria-modal="true" class="relative z-10" role="dialog">
+ <!-- Background backdrop, show/hide based on slide-over state. -->
+ <div class="fixed inset-0">
+ </div>
+ <div class="fixed inset-0 overflow-hidden">
+  <div class="absolute inset-0 overflow-hidden">
+   <div class="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10 sm:pl-16">
+    <!--
+          Slide-over panel, show/hide based on slide-over state.
+
+          Entering: "transform transition ease-in-out duration-500 sm:duration-700"
+            From: "translate-x-full"
+            To: "translate-x-0"
+          Leaving: "transform transition ease-in-out duration-500 sm:duration-700"
+            From: "translate-x-0"
+            To: "translate-x-full"
+        -->
+    <div class="pointer-events-auto w-screen max-w-md">
+     <div class="flex h-full flex-col overflow-y-scroll bg-white shadow-xl">
+      <div class="p-6">
+       <div class="flex items-start justify-between">
+        <h2 class="text-base font-semibold text-gray-900" id="slide-over-title">
+         Team
+        </h2>
+        <div class="ml-3 flex h-7 items-center">
+         <button class="relative rounded-md bg-white text-gray-400 hover:text-gray-500 focus:ring-2 focus:ring-indigo-500" type="button">
+          <span class="absolute -inset-2.5">
+          </span>
+          <span class="sr-only">
+           Close panel
+          </span>
+          <svg aria-hidden="true" class="size-6" data-slot="icon" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+           <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round">
+           </path>
+          </svg>
+         </button>
+        </div>
+       </div>
+      </div>
+      <div class="border-b border-gray-200">
+       <div class="px-6">
+        <!-- Tab component -->
+        <nav class="-mb-px flex space-x-6">
+         <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
+         <a class="whitespace-nowrap border-b-2 border-indigo-500 px-1 pb-4 text-sm font-medium text-indigo-600" href="#">
+          All
+         </a>
+         <a class="whitespace-nowrap border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700" href="#">
+          Online
+         </a>
+         <a class="whitespace-nowrap border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700" href="#">
+          Offline
+         </a>
+        </nav>
+       </div>
+      </div>
+      <ul class="flex-1 divide-y divide-gray-200 overflow-y-auto" role="list">
+       <li>
+        <div class="group relative flex items-center px-5 py-6">
+         <a class="-m-1 block flex-1 p-1" href="#">
+          <div aria-hidden="true" class="absolute inset-0 group-hover:bg-gray-50">
+          </div>
+          <div class="relative flex min-w-0 flex-1 items-center">
+           <span class="relative inline-block shrink-0">
+            <img alt="" class="size-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"/>
+            <!-- Online: "bg-green-400", Offline: "bg-gray-300" -->
+            <span aria-hidden="true" class="absolute right-0 top-0 block size-2.5 rounded-full bg-green-400 ring-2 ring-white">
+            </span>
+           </span>
+           <div class="ml-4 truncate">
+            <p class="truncate text-sm font-medium text-gray-900">
+             Leslie Alexander
+            </p>
+            <p class="truncate text-sm text-gray-500">
+             @lesliealexander
+            </p>
+           </div>
+          </div>
+         </a>
+         <div class="relative ml-2 inline-block shrink-0 text-left">
+          <button aria-expanded="false" aria-haspopup="true" class="group relative inline-flex size-8 items-center justify-center rounded-full bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2" id="options-menu-0-button" type="button">
+           <span class="absolute -inset-1.5">
+           </span>
+           <span class="sr-only">
+            Open options menu
+           </span>
+           <span class="flex size-full items-center justify-center rounded-full">
+            <svg aria-hidden="true" class="size-5 text-gray-400 group-hover:text-gray-500" data-slot="icon" fill="currentColor" viewbox="0 0 20 20">
+             <path d="M10 3a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM10 8.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM11.5 15.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Z">
+             </path>
+            </svg>
+           </span>
+          </button>
+          <!--
+                      Dropdown panel, show/hide based on dropdown state.
+
+                      Entering: "transition ease-out duration-100"
+                        From: "transform opacity-0 scale-95"
+                        To: "transform opacity-100 scale-100"
+                      Leaving: "transition ease-in duration-75"
+                        From: "transform opacity-100 scale-100"
+                        To: "transform opacity-0 scale-95"
+                    -->
+          <div aria-labelledby="options-menu-0-button" aria-orientation="vertical" class="absolute right-9 top-0 z-10 w-48 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none" role="menu" tabindex="-1">
+           <div class="py-1" role="none">
+            <!-- Active: "bg-gray-100 text-gray-900 outline-none", Not Active: "text-gray-700" -->
+            <a class="block px-4 py-2 text-sm text-gray-700" href="#" id="options-menu-0-item-0" role="menuitem" tabindex="-1">
+             View profile
+            </a>
+            <a class="block px-4 py-2 text-sm text-gray-700" href="#" id="options-menu-0-item-1" role="menuitem" tabindex="-1">
+             Send message
+            </a>
+           </div>
+          </div>
+         </div>
+        </div>
+       </li>
+       <!-- More people... -->
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>

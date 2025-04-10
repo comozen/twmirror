@@ -1,0 +1,40 @@
+<div class="inline-flex rounded-md shadow-sm">
+ <button class="relative inline-flex items-center rounded-l-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10" type="button">
+  Save changes
+ </button>
+ <div class="relative -ml-px block">
+  <button aria-expanded="true" aria-haspopup="true" class="relative inline-flex items-center rounded-r-md bg-white px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10" id="option-menu-button" type="button">
+   <span class="sr-only">
+    Open options
+   </span>
+   <svg aria-hidden="true" class="size-5" data-slot="icon" fill="currentColor" viewbox="0 0 20 20">
+    <path clip-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" fill-rule="evenodd">
+    </path>
+   </svg>
+  </button>
+  <!--
+      Dropdown menu, show/hide based on menu state.
+
+      Entering: "transition ease-out duration-100"
+        From: "transform opacity-0 scale-95"
+        To: "transform opacity-100 scale-100"
+      Leaving: "transition ease-in duration-75"
+        From: "transform opacity-100 scale-100"
+        To: "transform opacity-0 scale-95"
+    -->
+  <div aria-labelledby="option-menu-button" aria-orientation="vertical" class="absolute right-0 z-10 -mr-1 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none" role="menu" tabindex="-1">
+   <div class="py-1" role="none">
+    <!-- Active: "bg-gray-100 text-gray-900 outline-none", Not Active: "text-gray-700" -->
+    <a class="block px-4 py-2 text-sm text-gray-700" href="#" id="option-menu-item-0" role="menuitem" tabindex="-1">
+     Save and schedule
+    </a>
+    <a class="block px-4 py-2 text-sm text-gray-700" href="#" id="option-menu-item-1" role="menuitem" tabindex="-1">
+     Save and publish
+    </a>
+    <a class="block px-4 py-2 text-sm text-gray-700" href="#" id="option-menu-item-2" role="menuitem" tabindex="-1">
+     Export PDF
+    </a>
+   </div>
+  </div>
+ </div>
+</div>
