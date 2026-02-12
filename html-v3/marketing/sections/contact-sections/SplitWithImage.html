@@ -1,0 +1,115 @@
+<div class="relative bg-white">
+ <div class="lg:absolute lg:inset-0 lg:left-1/2">
+  <img alt="" class="h-64 w-full bg-gray-50 object-cover sm:h-80 lg:absolute lg:h-full" src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=.4&amp;w=2560&amp;h=3413&amp;&amp;q=80"/>
+ </div>
+ <div class="pb-24 pt-16 sm:pb-32 sm:pt-24 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:pt-32">
+  <div class="px-6 lg:px-8">
+   <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
+    <h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+     Let's work together
+    </h2>
+    <p class="mt-2 text-lg/8 text-gray-600">
+     Proin volutpat consequat porttitor cras nullam gravida at orci molestie a eu arcu sed ut tincidunt magna.
+    </p>
+    <form action="#" class="mt-16" method="POST">
+     <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+      <div>
+       <label class="block text-sm/6 font-semibold text-gray-900" for="first-name">
+        First name
+       </label>
+       <div class="mt-2.5">
+        <input autocomplete="given-name" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" id="first-name" name="first-name" type="text"/>
+       </div>
+      </div>
+      <div>
+       <label class="block text-sm/6 font-semibold text-gray-900" for="last-name">
+        Last name
+       </label>
+       <div class="mt-2.5">
+        <input autocomplete="family-name" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" id="last-name" name="last-name" type="text"/>
+       </div>
+      </div>
+      <div class="sm:col-span-2">
+       <label class="block text-sm/6 font-semibold text-gray-900" for="email">
+        Email
+       </label>
+       <div class="mt-2.5">
+        <input autocomplete="email" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" id="email" name="email" type="email"/>
+       </div>
+      </div>
+      <div class="sm:col-span-2">
+       <label class="block text-sm/6 font-semibold text-gray-900" for="company">
+        Company
+       </label>
+       <div class="mt-2.5">
+        <input autocomplete="organization" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" id="company" name="company" type="text"/>
+       </div>
+      </div>
+      <div class="sm:col-span-2">
+       <div class="flex justify-between text-sm/6">
+        <label class="block font-semibold text-gray-900" for="phone">
+         Phone
+        </label>
+        <p class="text-gray-400" id="phone-description">
+         Optional
+        </p>
+       </div>
+       <div class="mt-2.5">
+        <input aria-describedby="phone-description" autocomplete="tel" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" id="phone" name="phone" type="tel"/>
+       </div>
+      </div>
+      <div class="sm:col-span-2">
+       <div class="flex justify-between text-sm/6">
+        <label class="block text-sm/6 font-semibold text-gray-900" for="message">
+         How can we help you?
+        </label>
+        <p class="text-gray-400" id="message-description">
+         Max 500 characters
+        </p>
+       </div>
+       <div class="mt-2.5">
+        <textarea aria-describedby="message-description" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" id="message" name="message" rows="4"></textarea>
+       </div>
+      </div>
+      <fieldset class="sm:col-span-2">
+       <legend class="block text-sm/6 font-semibold text-gray-900">
+        Expected budget
+       </legend>
+       <div class="mt-4 space-y-4 text-sm/6 text-gray-600">
+        <div class="flex gap-x-2.5">
+         <input class="relative mt-1 size-4 appearance-none rounded-full border border-gray-300 before:absolute before:inset-1 before:rounded-full before:bg-white checked:border-indigo-600 checked:bg-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden [&amp;:not(:checked)]:before:hidden" id="budget-under-25k" name="budget" type="radio" value="under_25k"/>
+         <label for="budget-under-25k">
+          Less than $25K
+         </label>
+        </div>
+        <div class="flex gap-x-2.5">
+         <input class="relative mt-1 size-4 appearance-none rounded-full border border-gray-300 before:absolute before:inset-1 before:rounded-full before:bg-white checked:border-indigo-600 checked:bg-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden [&amp;:not(:checked)]:before:hidden" id="budget-25k-50k" name="budget" type="radio" value="25k-50k"/>
+         <label for="budget-25k-50k">
+          $25K – $50K
+         </label>
+        </div>
+        <div class="flex gap-x-2.5">
+         <input class="relative mt-1 size-4 appearance-none rounded-full border border-gray-300 before:absolute before:inset-1 before:rounded-full before:bg-white checked:border-indigo-600 checked:bg-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden [&amp;:not(:checked)]:before:hidden" id="budget-50k-100k" name="budget" type="radio" value="50k-100k"/>
+         <label for="budget-50k-100k">
+          $50K – $100K
+         </label>
+        </div>
+        <div class="flex gap-x-2.5">
+         <input class="relative mt-1 size-4 appearance-none rounded-full border border-gray-300 before:absolute before:inset-1 before:rounded-full before:bg-white checked:border-indigo-600 checked:bg-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden [&amp;:not(:checked)]:before:hidden" id="budget-over-100k" name="budget" type="radio" value="over_100k"/>
+         <label for="budget-over-100k">
+          $100K+
+         </label>
+        </div>
+       </div>
+      </fieldset>
+     </div>
+     <div class="mt-10 flex justify-end border-t border-gray-900/10 pt-8">
+      <button class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" type="submit">
+       Send message
+      </button>
+     </div>
+    </form>
+   </div>
+  </div>
+ </div>
+</div>
